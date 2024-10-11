@@ -1,6 +1,6 @@
-
-card_number_str = int()
-account_str = int()
+"""Пользователь вводит номер карты/счета"""
+card_number_str = input()
+account_str = input()
 
 
 def get_mask_card_number(card_number: str) -> str:
