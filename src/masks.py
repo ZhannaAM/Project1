@@ -1,8 +1,3 @@
-"""Пользователь вводит номер карты/счета"""
-card_number_str = input()
-account_str = input()
-
-
 def get_mask_card_number(card_number: str) -> str:
     """Функция принимает номер карты и возвращает ее маску 7000 79** **** 6361"""
     return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
