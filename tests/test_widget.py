@@ -26,3 +26,4 @@ def test_mask_account_card(card: str, mask_card: str) -> None:
                          )
 def test_get_date(date_time: str, date_out: str) -> None:
     assert get_date(date_time) == date_out
+
