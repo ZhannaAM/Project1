@@ -58,3 +58,10 @@ def test_card_number_generator():
 
     assert next(card_number)
     assert next(card_number)
+
+
+import pytest
+@pytest.mark.parametrize("description", ["Перевод организации"])
+def test_transaction_descriptions(transaction_list, description):
+    generator = transaction_descriptions(transaction_list)
+    assert next(generator) == description
