@@ -22,7 +22,7 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 
-# path = Path('/home/sergey/Рабочий стол/мои проекты/PoetryProject/data/operations.json')
+# path = Path(C:\Users\user\PycharmProjects\Homeworkbank\data\operations.json)
 
 def financial_transactions(path):
     """Функция, которая принимает на вход путь до JSON-файла и возвращает список словарей с данными о финансовых
