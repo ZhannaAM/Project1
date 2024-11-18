@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from typing import Any
 
@@ -272,5 +273,6 @@ def path():
 
 @pytest.fixture
 def path_mistake_json():
-    PATH_TO_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations_1.json")
-    return PATH_TO_FILE
+    PATH_TO_FILE = Path(__file__).parent.resolve()
+    return PATH_TO_FILE / "operations.json"
+
