@@ -10,3 +10,4 @@ def sort_by_date(date_list: Any, direction: bool = True) -> list:
     """Функция сортировки списка словарей по дате"""
     sorted_list = sorted(date_list, key=lambda x: x.get("date"), reverse=direction)
     return sorted_list
+
