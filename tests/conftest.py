@@ -273,8 +273,11 @@ def path():
 @pytest.fixture
 def path_mistake_json():
     PATH_TO_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations_1.json")
+
     return PATH_TO_FILE
-=======
+
+    return PATH_TO_FILE
+
 from pytest import fixture
 
 
@@ -357,4 +360,5 @@ def transaction_list():
         "to": "Счет 14211924144426031657"
     }
 ]
+
 
