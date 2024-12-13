@@ -3,6 +3,7 @@ import logging
 import os
 from pathlib import Path
 
+import path
 from dotenv import load_dotenv
 
 from src.external_api import convert_to_rub
@@ -21,8 +22,8 @@ file_formatter = logging.Formatter("%(asctime)s %(name)s %(levelname)s: %(messag
 file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
+#path = PATH_TO_PROJECT / 'data' / 'operations.json'
 
-# path = Path('/home/sergey/Рабочий стол/мои проекты/PoetryProject/data/operations.json')
 
 def financial_transactions(path):
     """Функция, которая принимает на вход путь до JSON-файла и возвращает список словарей с данными о финансовых
@@ -62,6 +63,5 @@ def transaction_amount(transactions, transaction_id):
         logger.error("Транзакция не найдена")
         return "Транзакция не найдена"
 
-
-# if __name__ == "__main__":
-#     print(financial_transactions(path))
+#if __name__ == "__main__":
+    #print(financial_transactions(path))
