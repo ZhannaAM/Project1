@@ -35,5 +35,5 @@ def reader_file_transaction_csv(path):
     return transaction_list
 
 
-if __name__ == "__main__":
-    print(reader_file_transaction_csv(path_csv))
+#if __name__ == "__main__":
+ #print(reader_file_transaction_csv(path_csv))

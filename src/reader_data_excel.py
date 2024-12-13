@@ -37,5 +37,5 @@ def reader_file_transaction_excel(path):
     return transaction_xlsx_list
 
 
-if __name__ == "__main__":
-     print(reader_file_transaction_excel(path_xlsx))
+#if __name__ == "__main__":
+     #print(reader_file_transaction_excel(path_xlsx))
